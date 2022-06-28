@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #6d6ddd;
+}
+
+main{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 100px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: blueviolet 0 0 30px 1px;
+}
+
+main :nth-child(n){
+    margin: 20px 0;
+}
+
+h2{
+    color: #b3b3b3;
+}
+
+.joke{
+    font-size: 36px;
+}
+
+button {
+    width: 230px;
+    height: 80px;
+    border-radius: 10px;
+    border: 0;
+    background: blueviolet;
+    color: white;
+    font-size: 24px;
+    box-shadow: #6d6ddd 0 0 10px 1px;
+}
+
+button:active {
+    transform: scale(0.98);
+}

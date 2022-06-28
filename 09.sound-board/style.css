@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: #B1BDC5;
+}
+
+div button {
+    flex:0 0 200px;
+    margin: 0 10px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 0;
+    background: #6A9A8B;
+    color: white;
+}
+
+div button:hover{
+    opacity: 0.8;
+}
+div button:active {
+    transform: scale(0.98);
+}
