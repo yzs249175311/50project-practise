@@ -4,9 +4,14 @@ html {
 }
 body{
     background-color:#DADDE2;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
 }
+a {
+    text-decoration: none;
+}
+
 #top{
     visibility: hidden;
     opacity: 0;
@@ -15,7 +20,6 @@ body{
     height: 30px;
     line-height: 30px;
     text-align: center;
-    text-decoration: none;
     right: 8%;
     bottom: 10%;
     color: #fff;
@@ -43,7 +47,26 @@ main a{
 
 main a:hover{
     color:#CAF7FF;
-    background:#B1BDC5;
+    background:#0d5959;
     font-size: 1.2em;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 100px;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+}
+
+footer ul li {
+    margin: 0 20px;
+}
+
+
+
 

@@ -20,6 +20,7 @@ let projects = [
     "17.movie-app",
     "18.background-slider",
     "19.theme-clock",
+    "20.button-ripple-effect",
 ]
 
 projects.forEach(function(name){
