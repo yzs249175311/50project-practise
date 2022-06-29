@@ -21,6 +21,7 @@ let projects = [
     "18.background-slider",
     "19.theme-clock",
     "20.button-ripple-effect",
+    "21.drag-n-drop",
 ]
 
 projects.forEach(function(name){
