@@ -26,6 +26,7 @@ let projects = [
     "23.kinetic-loader",
     "24.content-placeholder",
     "25.sticky-navbar",
+    "26.double-vertical-slider",
 ]
 
 projects.forEach(function(name){

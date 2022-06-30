@@ -6,13 +6,16 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
 .button {
     position: fixed;
     width: 40px;
     height: 40px;
     top: 50vh;
     border: 0;
+    opacity: 0.5;
 }
+
 .div {
     height: 100vh;
     display: flex;
@@ -22,33 +25,48 @@ body {
     color: #fff;
 }
 
+.animation{
+    transition: all 0.4s ease-out;
+}
+
 aside {
-    top:0;
     position: relative;
-    flex:3;
+    flex: 3;
     background: #22f2f2;
-    button{
-        .button;
-        right: 0;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
+    .animation;
     div {
         .div;
     }
 }
+
 main {
     position: relative;
     flex-flow: column nowrap;
-    flex:7;
+    flex: 7;
     background: violet;
-    button{
-        .button;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
+    .animation;
     div {
         .div;
     }
+}
 
+.down {
+    .button;
+    right: 70%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.down:hover {
+    opacity: 1;
+}
+
+.up {
+    .button;
+    left: 30%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.up:hover {
+    opacity: 1;
 }

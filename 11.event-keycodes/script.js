@@ -6,7 +6,7 @@ window.onkeydown= (e) => {
     console.log(key);
     console.log(keyCode);
     console.log(code);
-    key.innerHTML= e.key;
-    keyCode.innerHTML= e.keyCode;
-    code.innerHTML= e.code;
+    key.innerText= e.key;
+    keyCode.innerText= e.keyCode;
+    code.innerText= e.code;
 };
