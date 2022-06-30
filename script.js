@@ -23,6 +23,9 @@ let projects = [
     "20.button-ripple-effect",
     "21.drag-n-drop",
     "22.drawing-app",
+    "23.kinetic-loader",
+    "24.content-placeholder",
+    "25.sticky-navbar",
 ]
 
 projects.forEach(function(name){

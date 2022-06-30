@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.button {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 50vh;
+    border: 0;
+}
+.div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+aside {
+    top:0;
+    position: relative;
+    flex:3;
+    background: #22f2f2;
+    button{
+        .button;
+        right: 0;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    div {
+        .div;
+    }
+}
+main {
+    position: relative;
+    flex-flow: column nowrap;
+    flex:7;
+    background: violet;
+    button{
+        .button;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    div {
+        .div;
+    }
+
+}
