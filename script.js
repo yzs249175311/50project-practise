@@ -27,6 +27,7 @@ let projects = [
     "24.content-placeholder",
     "25.sticky-navbar",
     "26.double-vertical-slider",
+    "virtual scroller",
 ]
 
 projects.forEach(function(name){
