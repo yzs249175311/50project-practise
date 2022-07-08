@@ -1,9 +1,9 @@
 let vs = new VirtualScroller({
     el:"#virtual-scroller",
-    scrollerHeight:500,
+    scrollerClientHeight:500,
     rowHeight:40,
-    pageSize: 40,
-    buffer: 20,
+    buffer:10,
+    pageSize:40,
 })
 
 vs.init()

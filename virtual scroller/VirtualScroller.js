@@ -105,5 +105,4 @@ class VirtualScroller {
         this.renderNewData(newData)
         this.scroller.addEventListener("scroll", this.handleScroller)
     }
-
 }
