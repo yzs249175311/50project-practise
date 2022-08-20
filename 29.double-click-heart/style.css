@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .love {
+    color:red;
+}
+
+.main #image {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: center/100% 100% no-repeat;
+    box-shadow: 0 0 20px;
+    cursor:pointer;
+    user-select: none;
+}
+
+.main #image>.love {
+    position: absolute;
+    color: red;
+    font-size: 1rem ;
+    transform: translate(-50%,-50%);
+    animation: larger 0.4s ease-out;
+}
+
+@keyframes larger {
+    to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}

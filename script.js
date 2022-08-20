@@ -27,6 +27,9 @@ let projects = [
   "24.content-placeholder",
   "25.sticky-navbar",
   "26.double-vertical-slider",
+  "27.toast-notification",
+  "28.github-profiles",
+  "29.double-click-heart",
   "virtual scroller",
   "virtual-scroller-v2",
 ];
