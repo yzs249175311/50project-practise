@@ -30,6 +30,7 @@ let projects = [
   "27.toast-notification",
   "28.github-profiles",
   "29.double-click-heart",
+  "30.auto-text-effect",
   "virtual scroller",
   "virtual-scroller-v2",
 ];
