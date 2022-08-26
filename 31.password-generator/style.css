@@ -1,0 +1,75 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	color:#fff;
+	background-color: slateblue;
+}
+.main {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	background-color: royalblue;
+	padding: 20px;
+	width: 20rem;
+	box-shadow: 0 0 20px ;
+}
+.main>h2{
+	align-self: center;
+}
+
+.show-password {
+	position: relative;
+	width: 100%;
+}
+
+#show {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 50px;
+	font-size: 1.2rem;
+	padding-left: 10px;
+	padding-right: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#clipboard {
+	position: absolute;
+	color:#fff;
+	top: 50%;
+	right:8px;
+	padding: 12px;
+	background-color: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	cursor:pointer;
+}
+
+.main>div{
+	margin-bottom: 10px;
+}
+
+.length,
+.upper,
+.lower,
+.numbers,
+.symbols {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+button {
+	color: white;
+	background-color: cadetblue;
+	border:0;
+	padding: 10px;
+	font-size:1.2rem;
+	cursor:pointer;
+}
