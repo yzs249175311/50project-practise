@@ -32,6 +32,7 @@ let projects = [
 	"29.double-click-heart",
 	"30.auto-text-effect",
 	"31.password-generator",
+	"32.good-cheap-fast",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
