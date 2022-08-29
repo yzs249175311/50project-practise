@@ -1,0 +1,51 @@
+body {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+}
+
+main {
+	width: 400px;
+}
+
+main .screen{
+	overflow: hidden;
+	width: 400px;
+}
+
+main .screen .imgs{
+	display: flex;
+	height: 400px;
+	transform: translate(0);
+	transition: transform ease-out 0.6s;
+}
+
+main .screen .imgs img {
+	width: 400px;
+	height: 400px;
+}
+
+main .screen .button-group {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 10px;
+}
+main .screen .button-group button{
+	width: 40%;
+	height: 30px;
+	border: 0 solid;
+	outline: none;
+	color: #fff;
+	background-color:#683397;
+}
+
+main .screen .button-group button:hover{
+	background-color: #7748a2;
+}

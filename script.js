@@ -35,6 +35,7 @@ let projects = [
 	"32.good-cheap-fast",
 	"33.notes-app",
 	"34.animated-countdown",
+	"35.image-carousel",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
