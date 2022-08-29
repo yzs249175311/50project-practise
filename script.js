@@ -33,6 +33,7 @@ let projects = [
 	"30.auto-text-effect",
 	"31.password-generator",
 	"32.good-cheap-fast",
+	"33.notes-app",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
