@@ -37,6 +37,7 @@ let projects = [
 	"34.animated-countdown",
 	"35.image-carousel",
 	"36.hoverboard",
+	"38.mobile-tab-navigation",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
