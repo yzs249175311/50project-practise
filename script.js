@@ -38,6 +38,7 @@ let projects = [
 	"35.image-carousel",
 	"36.hoverboard",
 	"38.mobile-tab-navigation",
+	"39.password-strength-background",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
