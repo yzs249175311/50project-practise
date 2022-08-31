@@ -39,6 +39,7 @@ let projects = [
 	"36.hoverboard",
 	"38.mobile-tab-navigation",
 	"39.password-strength-background",
+	"40.3d-background-boxes",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
