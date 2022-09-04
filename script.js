@@ -40,6 +40,8 @@ let projects = [
 	"38.mobile-tab-navigation",
 	"39.password-strength-background",
 	"40.3d-background-boxes",
+	"41.verify-account-ui",
+	"42.live-user-filter",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
