@@ -1,0 +1,60 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+main {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+input[type=range] {
+	-webkit-appearance: none;/*清除默认样式*/
+	width: 400px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	-webkit-appearance: none;/*清除默认样式*/
+	background: purple;/*设置背景色*/
+	border-radius: 30px;
+	height: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+
+	-webkit-appearance: none;
+	border: 1px solid #000000;
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+	background: #ffffff;
+	margin-top: -4px;
+	cursor: pointer;
+}
+
+#show {
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	transform: translateY(-150%);
+	background-color:#e3e3e3 ;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#show::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 10px solid #e3e3e3;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+}
+

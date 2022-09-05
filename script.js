@@ -42,6 +42,7 @@ let projects = [
 	"40.3d-background-boxes",
 	"41.verify-account-ui",
 	"42.live-user-filter",
+	"44.custom-range-slider",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
