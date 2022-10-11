@@ -1,0 +1,35 @@
+[19:24:09.080] Global cache location '/home/yuanzishuai/.cache/typescript/4.8', safe file path '/usr/local/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/local/lib/node_modules/typescript/lib/typesMap.json
+[19:24:09.082] Processing cache location '/home/yuanzishuai/.cache/typescript/4.8'
+[19:24:09.083] Trying to find '/home/yuanzishuai/.cache/typescript/4.8/package.json'...
+[19:24:09.086] Loaded content of '/home/yuanzishuai/.cache/typescript/4.8/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.608"}}
+[19:24:09.087] Loaded content of '/home/yuanzishuai/.cache/typescript/4.8/package-lock.json'
+[19:24:09.088] Finished processing cache location '/home/yuanzishuai/.cache/typescript/4.8'
+[19:24:09.093] Process id: 4067
+[19:24:09.094] NPM location: /home/yuanzishuai/.nvm/versions/node/v16.17.0/bin/npm (explicit '--npmLocation' not  provided)
+[19:24:09.095] validateDefaultNpmLocation: false
+[19:24:09.097] Npm config file: /home/yuanzishuai/.cache/typescript/4.8/package.json
+[19:24:09.098] Updating types-registry npm package...
+[19:24:09.099] Exec: /home/yuanzishuai/.nvm/versions/node/v16.17.0/bin/npm install --ignore-scripts types-registry@latest
+[19:24:11.020]     Succeeded. stdout:
+    
+    up to date, audited 2 packages in 2s
+
+found 0 vulnerabilities
+
+[19:24:11.022] Updated types-registry npm package
+[19:24:33.774] Got install request {"projectName":"/dev/null/inferredProject3*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.iterable.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.core.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.collection.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.generator.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.iterable.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.promise.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.proxy.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.reflect.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.array.include.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es2016.full.d.ts","/mnt/d/web/practise/50projectPractise/script.js"],"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/mnt/d/web/practise/50projectPractise","kind":"discover"}
+[19:24:33.791] Loaded safelist from types map file '/usr/local/lib/node_modules/typescript/lib/typesMap.json'
+[19:24:33.793] Explicitly included types: []
+[19:24:33.796] Inferred typings from unresolved imports: []
+[19:24:33.797] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/mnt/d/web/practise/50projectPractise/bower_components","/mnt/d/web/practise/50projectPractise/node_modules"]}
+[19:24:33.798] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/mnt/d/web/practise/50projectPractise/bower_components","/mnt/d/web/practise/50projectPractise/node_modules"]}
+[19:24:33.799] DirectoryWatcher:: Added:: WatchInfo: /mnt/d/web/practise/50projectPractise/bower_components
+[19:24:33.800] DirectoryWatcher:: Added:: WatchInfo: /mnt/d/web/practise/50projectPractise/bower_components 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+[19:24:33.803] Elapsed:: 2.0555419996380806ms DirectoryWatcher:: Added:: WatchInfo: /mnt/d/web/practise/50projectPractise/bower_components 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+[19:24:33.805] DirectoryWatcher:: Added:: WatchInfo: /mnt/d/web/practise/50projectPractise/node_modules
+[19:24:33.806] DirectoryWatcher:: Added:: WatchInfo: /mnt/d/web/practise/50projectPractise/node_modules 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+[19:24:33.807] Elapsed:: 0.4882720001041889ms DirectoryWatcher:: Added:: WatchInfo: /mnt/d/web/practise/50projectPractise/node_modules 1 undefined Project: /dev/null/inferredProject3* watcher already invoked: false
+[19:24:33.808] Sending response:
+    {"projectName":"/dev/null/inferredProject3*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"module":1,"target":3,"jsx":1,"allowJs":true,"allowSyntheticDefaultImports":true,"allowNonTsExtensions":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[19:24:33.809] Response has been sent.
+[19:24:33.810] No new typings were requested as a result of typings discovery

@@ -43,6 +43,7 @@ let projects = [
 	"41.verify-account-ui",
 	"42.live-user-filter",
 	"44.custom-range-slider",
+	"45.netflix-mobile-navigation",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];

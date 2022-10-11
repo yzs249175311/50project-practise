@@ -1,0 +1,19 @@
+[17:36:31.567] Global cache location '/home/yuanzishuai/.cache/typescript/4.8', safe file path '/usr/local/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/local/lib/node_modules/typescript/lib/typesMap.json
+[17:36:31.570] Processing cache location '/home/yuanzishuai/.cache/typescript/4.8'
+[17:36:31.571] Trying to find '/home/yuanzishuai/.cache/typescript/4.8/package.json'...
+[17:36:31.573] Loaded content of '/home/yuanzishuai/.cache/typescript/4.8/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.608"}}
+[17:36:31.574] Loaded content of '/home/yuanzishuai/.cache/typescript/4.8/package-lock.json'
+[17:36:31.575] Finished processing cache location '/home/yuanzishuai/.cache/typescript/4.8'
+[17:36:31.582] Process id: 3330
+[17:36:31.583] NPM location: /home/yuanzishuai/.nvm/versions/node/v16.17.0/bin/npm (explicit '--npmLocation' not  provided)
+[17:36:31.584] validateDefaultNpmLocation: false
+[17:36:31.585] Npm config file: /home/yuanzishuai/.cache/typescript/4.8/package.json
+[17:36:31.586] Updating types-registry npm package...
+[17:36:31.587] Exec: /home/yuanzishuai/.nvm/versions/node/v16.17.0/bin/npm install --ignore-scripts types-registry@latest
+[17:36:32.876]     Succeeded. stdout:
+    
+    up to date, audited 2 packages in 1s
+
+found 0 vulnerabilities
+
+[17:36:32.877] Updated types-registry npm package
