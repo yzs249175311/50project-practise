@@ -1,0 +1,55 @@
+body {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+main {
+	display: flex;
+	flex-flow: column;
+	background-color: #476ce3; 
+	width: 600px;
+	border-radius: 20px;
+	padding: 30px 50px;
+}
+
+main>:nth-child(n){
+	margin: 20px 0;
+}
+
+main .process {
+	background-color: #fff;
+	height: 5px;
+	border-radius: 10px;
+}
+
+main .intro {
+	color: #fff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.2em;
+	text-align: justify;
+}
+
+main .card{
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+main .card img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+}
+
+main .card .box {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
