@@ -45,6 +45,7 @@ let projects = [
 	"44.custom-range-slider",
 	"45.netflix-mobile-navigation",
 	"46.quiz-app",
+	"47.testimonial-box-switcher",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
