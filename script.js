@@ -46,6 +46,7 @@ let projects = [
 	"45.netflix-mobile-navigation",
 	"46.quiz-app",
 	"47.testimonial-box-switcher",
+	"48.random-image-feed",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
