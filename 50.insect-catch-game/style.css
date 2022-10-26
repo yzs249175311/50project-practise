@@ -1,0 +1,139 @@
+:root {
+	font-size: 24px;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	/* transform: translateY(0); */
+	transition: transform 1s ease;
+	overflow: hidden;
+}
+
+body.up1 {
+	transform: translateY(-100vh);
+}
+
+body.up2 {
+	transform: translateY(-200vh);
+}
+.screen {
+	display: flex;
+	position: relative;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #516DFF ;
+}
+
+.screen h1{
+	font-size: 2rem;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.screen button {
+	display: block;
+	width: 200px;
+	height: 60px;
+	outline: none;
+	border: 0;
+	color:#6D84FF;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.screen button:hover {
+	background-color: #e3e3e3;
+}
+
+.screen.choice {
+	
+}
+.screen.choice ul{
+	display: flex;
+	list-style: none;
+}
+
+
+.screen.choice ul li{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	width: 150px;
+	height: 150px;
+	color:#fff;
+	margin: 10px;
+	cursor:pointer;
+}
+.screen.choice ul li:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.screen.choice ul li h3{
+	margin: 0;
+}
+
+.screen.choice ul li img{
+	width: 100px;
+	height: 100px;
+}
+
+.screen.game-container {}
+
+.screen.game-container #time,
+.screen.game-container #score {
+	position: absolute;
+	top:10px;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.screen.game-container #time{
+	left: 10px;
+}
+
+.screen.game-container #score{
+	right: 10px;
+}
+
+.screen.game-container .insect{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	transition: all 0.4s ease;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+.screen.game-container .insect.catched{
+	transform: scale(0.1);
+}
+
+.screen.game-container .over{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	width: 100%;
+	color: #fff;
+	background-color: rgb(0,0,0,0.4);
+	top: 0;
+	transform: translateY(-100%);
+	transition: transform 1s ease;
+	visibility: hidden;
+}
+
+.screen.game-container .over.fail{
+	visibility: visible;
+	transform: translateY(100%);
+	z-index: 9999;
+}
