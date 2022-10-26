@@ -47,6 +47,7 @@ let projects = [
 	"46.quiz-app",
 	"47.testimonial-box-switcher",
 	"48.random-image-feed",
+	"49.todo-list",
 	"virtual scroller",
 	"virtual-scroller-v2",
 ];
