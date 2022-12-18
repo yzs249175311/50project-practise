@@ -51,6 +51,7 @@ let projects = [
 	"50.insect-catch-game",
 	"virtual scroller",
 	"virtual-scroller-v2",
+	"打字机效果(css)",
 ];
 
 projects.forEach(function (name) {

@@ -1,0 +1,48 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #e3e3e3;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+#content{
+    position: relative;
+    display: flex;
+    height: 1em;
+    font: 1em monospace;
+    white-space: nowrap;
+}
+
+#content::before,
+#content::after {
+    content:"";
+    height: 100%;
+    width: 100%;
+    background-color: #e3e3e3;
+    position: absolute;
+    inset: 0;
+    z-index: 998;
+}
+
+#content::before{
+    width: 0.1em;
+    background-color: black;
+    z-index: 999;
+}
+
+@keyframes typewriter {
+    from{
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes flashing {
+    to{
+        opacity:0;
+    }
+}
