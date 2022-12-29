@@ -5,7 +5,7 @@ let content = document.querySelector("#content");
 
 	function next(){
 		index = (index + 1) % (preContent.length+1)
-		content.innerHTML = preContent.slice(0, index).replace(" ", "&nbsp;")
+		content.innerText = preContent.slice(0, index)
 		timer = setTimeout(next,500)
 	}
 

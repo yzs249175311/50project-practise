@@ -17,7 +17,8 @@ body {
 	left:3em;
 	padding: 0 2em;
     height: 1em;
-    white-space: nowrap;
+	/* 重要 不然文本最后的空格会不显示*/
+    white-space: pre;
 	color:#ffff;
 	text-shadow:
 		0 0 10px yellow,
