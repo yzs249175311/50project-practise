@@ -11,7 +11,6 @@ body {
     position: relative;
     display: flex;
     height: 1em;
-    font: 1em monospace;
     white-space: nowrap;
 }
 
