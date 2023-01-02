@@ -53,6 +53,7 @@ let projects = [
 	"virtual-scroller-v2",
 	"打字机效果(css)",
 	"打字机效果(js css发光)",
+	"放大镜",
 ];
 
 projects.forEach(function (name) {
