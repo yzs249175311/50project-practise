@@ -20,10 +20,10 @@ body {
 }
 
 #l-container{
-    background: url("../assert/image/image2.jpg") no-repeat left/cover;
+    background: url("../assets/image/image2.jpg") no-repeat left/cover;
 }
 #r-container{
-    background: url("../assert/image/image4.jpg") no-repeat left/cover;
+    background: url("../assets/image/image4.jpg") no-repeat left/cover;
 }
 
 #l-container:hover,#r-container:hover{

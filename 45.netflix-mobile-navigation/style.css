@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	width: 100vw;
 	height: 100vh;
-	background: url("../assert/image/image1.jpg") center/cover;
+	background: url("../assets/image/image1.jpg") center/cover;
 }
 main {
 	position: relative;

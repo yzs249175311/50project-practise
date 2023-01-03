@@ -43,26 +43,26 @@
 }
 
 .panel:nth-child(1) {
-    background: url('assert/image1.jpg') no-repeat center;
+    background: url('assets/image1.jpg') no-repeat center;
     background-size: cover;
 }
 
 .panel:nth-child(2) {
-    background: url('assert/image2.jpg') no-repeat center;
+    background: url('assets/image2.jpg') no-repeat center;
     background-size: cover;
 }
 
 .panel:nth-child(3) {
-    background: url('assert/image3.jpg') no-repeat center;
+    background: url('assets/image3.jpg') no-repeat center;
     background-size: cover;
 }
 
 .panel:nth-child(4) {
-    background: url('assert/image4.jpg') no-repeat center;
+    background: url('assets/image4.jpg') no-repeat center;
     background-size: cover;
 }
 
 .panel:nth-child(5) {
-    background: url('assert/image5.jpg') no-repeat center;
+    background: url('assets/image5.jpg') no-repeat center;
     background-size: cover;
 }
