@@ -54,6 +54,7 @@ let projects = [
 	"打字机效果(css)",
 	"打字机效果(js css发光)",
 	"放大镜",
+	"缓动函数_小球运动",
 ];
 
 projects.forEach(function (name) {
