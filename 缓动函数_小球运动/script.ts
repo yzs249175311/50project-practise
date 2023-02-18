@@ -85,7 +85,7 @@ namespace 缓动函数_小球运动 {
 
 	function createMove(dom: HTMLDivElement) {
 
-		let timer: number | null = null
+		let timer: NodeJS.Timeout | null = null
 		let speed_v = 0
 		let speed_h = 0
 		let accelerated_speed_down = 0.8
@@ -109,50 +109,51 @@ namespace 缓动函数_小球运动 {
 			return new Promise(function(resolve){
 				ballState!.innerText = "运动中..."
 
-				function run() {
-					let parent = dom.parentElement as HTMLDivElement
-
-					speed_v += accelerated_speed
-
-					dom.style.left = parseInt(getComputedStyle(dom).left) + speed_h + "px"
-					dom.style.top = parseInt(getComputedStyle(dom).top) + speed_v + "px"
-
-					let bottom = parseInt(getComputedStyle(dom).bottom)
-					let top = parseInt(getComputedStyle(dom).top)
-					let left = parseInt(getComputedStyle(dom).left)
-					let right = parseInt(getComputedStyle(dom).right)
-
-					if (bottom < 0 || top < 0) {
-						speed_v = -speed_v * accelerated_speed_down
-						speed_h = speed_h * accelerated_speed_down
-						if (bottom <= 0) {
-							dom.style.top = parent.clientHeight - dom.offsetHeight + "px"
-						} else {
-							dom.style.top = "0px"
-						}
-					}
-					if (left < 0 || right < 0) {
-						speed_h = -speed_h * accelerated_speed_down
-						speed_v = speed_v * accelerated_speed_down
-						if (left <= 0) {
-							dom.style.left = "0px"
-						} else {
-							dom.style.left = parent.clientWidth - dom.offsetWidth + "px"
-						}
-					}
-
-					if (Math.abs(speed_v) < accelerated_speed && Math.abs(speed_h) < 1 && bottom <= 0) {
-						resolve("end")
-						return
-					}
-
-					timer = setTimeout(run, 16)
-				}
-
-				run()
+				run((res:string)=>{
+					resolve(res)
+				})
 			})
 		}
 
+		function run(callback:Function) {
+			let parent = dom.parentElement as HTMLDivElement
+
+			speed_v += accelerated_speed
+
+			dom.style.left = parseInt(getComputedStyle(dom).left) + speed_h + "px"
+			dom.style.top = parseInt(getComputedStyle(dom).top) + speed_v + "px"
+
+			let bottom = parseInt(getComputedStyle(dom).bottom)
+			let top = parseInt(getComputedStyle(dom).top)
+			let left = parseInt(getComputedStyle(dom).left)
+			let right = parseInt(getComputedStyle(dom).right)
+
+			if (bottom < 0 || top < 0) {
+				speed_v = -speed_v * accelerated_speed_down
+				speed_h = speed_h * accelerated_speed_down
+				if (bottom <= 0) {
+					dom.style.top = parent.clientHeight - dom.offsetHeight + "px"
+				} else {
+					dom.style.top = "0px"
+				}
+			}
+			if (left < 0 || right < 0) {
+				speed_h = -speed_h * accelerated_speed_down
+				speed_v = speed_v * accelerated_speed_down
+				if (left <= 0) {
+					dom.style.left = "0px"
+				} else {
+					dom.style.left = parent.clientWidth - dom.offsetWidth + "px"
+				}
+			}
+
+			if (Math.abs(speed_v) < accelerated_speed && Math.abs(speed_h) < 1 && bottom <= 0) {
+				callback("end")
+				return
+			}
+
+			timer = setTimeout(run, 16,callback)
+		}
 		function init() {
 			if (timer) {
 				clearTimeout(timer!)

@@ -21,16 +21,19 @@ var 放大镜;
         var file = e.currentTarget.files[0];
         if (!(file === null || file === void 0 ? void 0 : file.type.match("image")))
             return;
-        if (file.size > 100000) {
-            alert("文件过大,请小于100kb!");
-            e.currentTarget.value = "";
-            return;
-        }
-        var fileReader = new FileReader();
-        fileReader.readAsDataURL(file);
-        fileReader.onload = function (ev) {
-            sourceImg.src = (ev.target.result);
-            magniflerImg.src = sourceImg.src;
-        };
+        // if(file.size > 100000){ 
+        //   alert("文件过大,请小于100kb!");
+        //   (<HTMLInputElement>e.currentTarget).value = "";
+        //   return
+        //  }
+        // let fileReader = new FileReader()
+        // fileReader.readAsDataURL(file)
+        // 使用blob可以支持更大的图片的预览
+        var fileURL = URL.createObjectURL(file);
+        // fileReader.onload = (ev:ProgressEvent<FileReader>) => {
+        //   sourceImg.src = (ev.target!.result) as string
+        //   magniflerImg.src = sourceImg.src
+        // }
+        magniflerImg.src = sourceImg.src = fileURL;
     });
 })(放大镜 || (放大镜 = {}));

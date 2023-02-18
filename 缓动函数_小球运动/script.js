@@ -94,43 +94,45 @@ var 缓动函数_小球运动;
             }
             return new Promise(function (resolve) {
                 ballState.innerText = "运动中...";
-                function run() {
-                    var parent = dom.parentElement;
-                    speed_v += accelerated_speed;
-                    dom.style.left = parseInt(getComputedStyle(dom).left) + speed_h + "px";
-                    dom.style.top = parseInt(getComputedStyle(dom).top) + speed_v + "px";
-                    var bottom = parseInt(getComputedStyle(dom).bottom);
-                    var top = parseInt(getComputedStyle(dom).top);
-                    var left = parseInt(getComputedStyle(dom).left);
-                    var right = parseInt(getComputedStyle(dom).right);
-                    if (bottom < 0 || top < 0) {
-                        speed_v = -speed_v * accelerated_speed_down;
-                        speed_h = speed_h * accelerated_speed_down;
-                        if (bottom <= 0) {
-                            dom.style.top = parent.clientHeight - dom.offsetHeight + "px";
-                        }
-                        else {
-                            dom.style.top = "0px";
-                        }
-                    }
-                    if (left < 0 || right < 0) {
-                        speed_h = -speed_h * accelerated_speed_down;
-                        speed_v = speed_v * accelerated_speed_down;
-                        if (left <= 0) {
-                            dom.style.left = "0px";
-                        }
-                        else {
-                            dom.style.left = parent.clientWidth - dom.offsetWidth + "px";
-                        }
-                    }
-                    if (Math.abs(speed_v) < accelerated_speed && Math.abs(speed_h) < 1 && bottom <= 0) {
-                        resolve("end");
-                        return;
-                    }
-                    timer = setTimeout(run, 16);
-                }
-                run();
+                run(function (res) {
+                    resolve(res);
+                });
             });
+        }
+        function run(callback) {
+            var parent = dom.parentElement;
+            speed_v += accelerated_speed;
+            dom.style.left = parseInt(getComputedStyle(dom).left) + speed_h + "px";
+            dom.style.top = parseInt(getComputedStyle(dom).top) + speed_v + "px";
+            var bottom = parseInt(getComputedStyle(dom).bottom);
+            var top = parseInt(getComputedStyle(dom).top);
+            var left = parseInt(getComputedStyle(dom).left);
+            var right = parseInt(getComputedStyle(dom).right);
+            if (bottom < 0 || top < 0) {
+                speed_v = -speed_v * accelerated_speed_down;
+                speed_h = speed_h * accelerated_speed_down;
+                if (bottom <= 0) {
+                    dom.style.top = parent.clientHeight - dom.offsetHeight + "px";
+                }
+                else {
+                    dom.style.top = "0px";
+                }
+            }
+            if (left < 0 || right < 0) {
+                speed_h = -speed_h * accelerated_speed_down;
+                speed_v = speed_v * accelerated_speed_down;
+                if (left <= 0) {
+                    dom.style.left = "0px";
+                }
+                else {
+                    dom.style.left = parent.clientWidth - dom.offsetWidth + "px";
+                }
+            }
+            if (Math.abs(speed_v) < accelerated_speed && Math.abs(speed_h) < 1 && bottom <= 0) {
+                callback("end");
+                return;
+            }
+            timer = setTimeout(run, 16, callback);
         }
         function init() {
             if (timer) {

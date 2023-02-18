@@ -47,7 +47,7 @@ button{
     border-top: var(--view-color) 4px solid;
     width: 150px;
     transform-origin: 0px 1px;
-    transition:all 1s linear;
+    transition:transform 1s linear;
 }
 
 .pointer .point {

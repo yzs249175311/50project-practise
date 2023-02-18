@@ -11,7 +11,7 @@ update()
 function update(){
     let date = new Date();
     hour.style.transform = `translateX(50%) rotate(${-90+(date.getHours()*360/12)}deg)`
-    minute.style.transform = `translateX(50%) rotate(${-90+(date.getMinutes()*359/60)}deg)`
+    minute.style.transform = `translateX(50%) rotate(${-90+(date.getMinutes()*360/60)}deg)`
     second.style.transform = `translateX(50%) rotate(${-90+(date.getSeconds()*360/60)}deg)`
     time.innerText = `${date.getHours()>12?date.getHours()-12:date.getHours()}:${date.getMinutes()} ${date.getHours()>12?"PM":"AM"}`
     weekandmonth.innerText = `${date.toString().match(/^\w+\s\w+/)}`

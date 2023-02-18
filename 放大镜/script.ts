@@ -33,18 +33,21 @@ namespace 放大镜 {
 
     if(!file?.type.match("image")) return; 
 
-    if(file.size > 100000){ 
-      alert("文件过大,请小于100kb!");
-      (<HTMLInputElement>e.currentTarget).value = "";
-      return
-     }
+    // if(file.size > 100000){ 
+    //   alert("文件过大,请小于100kb!");
+    //   (<HTMLInputElement>e.currentTarget).value = "";
+    //   return
+    //  }
 
-    let fileReader = new FileReader()
-    fileReader.readAsDataURL(file)
+    // let fileReader = new FileReader()
+    // fileReader.readAsDataURL(file)
+	// 使用blob可以支持更大的图片的预览
+	let fileURL = URL.createObjectURL(file)
+    // fileReader.onload = (ev:ProgressEvent<FileReader>) => {
+    //   sourceImg.src = (ev.target!.result) as string
+    //   magniflerImg.src = sourceImg.src
+    // }
 
-    fileReader.onload = (ev:ProgressEvent<FileReader>) => {
-      sourceImg.src = (ev.target!.result) as string
-      magniflerImg.src = sourceImg.src
-    }
+	  magniflerImg.src = sourceImg.src = fileURL
   })
 }
