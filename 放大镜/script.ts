@@ -28,10 +28,35 @@ namespace 放大镜 {
     magniflerImg.style.top = -moveBlockTop * scaleHeight + "px";
   });
 
+  sourceImg.addEventListener("dragenter", (e)=>{
+	e.preventDefault();
+	(<HTMLImageElement>e.currentTarget).style.filter = "grayscale(1)"
+  })
+  sourceImg.addEventListener("dragleave", (e)=>{
+	e.preventDefault();
+	(<HTMLImageElement>e.currentTarget).style.filter = "grayscale(0)"
+  })
+  sourceImg.addEventListener("dragover", (e)=>{
+	e.preventDefault()
+  })
+  sourceImg.addEventListener("drop", (e:DragEvent)=>{
+	e.preventDefault();
+	(<HTMLImageElement>e.currentTarget).style.filter = "grayscale(0)"
+	let file = e.dataTransfer?.files[0]!
+	let src = URL.createObjectURL(file)
+
+    if(!file.type.match("image")) return; 
+
+	magniflerImg.src = sourceImg.src = src 
+  })
+
   imgFile.addEventListener("change", (e) => {
     let file = (e.currentTarget as HTMLInputElement).files![0]
 
-    if(!file?.type.match("image")) return; 
+    if(!file?.type.match("image")){
+	  (e.currentTarget as HTMLInputElement).value=''
+	  return
+	} ; 
 
     // if(file.size > 100000){ 
     //   alert("文件过大,请小于100kb!");
