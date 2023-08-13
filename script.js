@@ -49,6 +49,7 @@ let projects = [
 	"48.random-image-feed",
 	"49.todo-list",
 	"50.insect-catch-game",
+	"51.parallax-scrolling",
 	"virtual scroller",
 	"virtual-scroller-v2",
 	"打字机效果(css)",
