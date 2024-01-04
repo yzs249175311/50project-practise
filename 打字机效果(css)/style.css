@@ -7,16 +7,18 @@ body {
     align-items: center;
     font-size: 100px;
 }
-#content{
+#content {
     position: relative;
+    font-family: monospace;
     display: flex;
     height: 1em;
+    line-height: 1em;
     white-space: nowrap;
 }
 
 #content::before,
 #content::after {
-    content:"";
+    content: "";
     height: 100%;
     width: 100%;
     background-color: #e3e3e3;
@@ -25,14 +27,14 @@ body {
     z-index: 998;
 }
 
-#content::before{
+#content::before {
     width: 0.1em;
     background-color: black;
     z-index: 999;
 }
 
 @keyframes typewriter {
-    from{
+    from {
         left: 0;
     }
     to {
@@ -41,7 +43,7 @@ body {
 }
 
 @keyframes flashing {
-    to{
-        opacity:0;
+    to {
+        opacity: 0;
     }
 }
