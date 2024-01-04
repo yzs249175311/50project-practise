@@ -51,6 +51,7 @@ let projects = [
     "50.insect-catch-game",
     "51.parallax-scrolling",
     "52.gsap-basic",
+    "53.carousel",
     "virtual scroller",
     "virtual-scroller-v2",
     "打字机效果(css)",
