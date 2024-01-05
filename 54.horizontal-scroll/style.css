@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #aaa8, #eeee);
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    box-shadow: 0 0 50px 10px #000a;
+}
+
+img {
+    width: 100%;
+}
+
+.container-scroll {
+    transform-origin: top left;
+    overflow: auto;
+}
+
+.container-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.container-scroll .content {
+    display: flex;
+    flex-flow: row nowrap;
+    transform-origin: top left;
+    align-items: stretch;
+    transform: translateX(100%) rotate(90deg);
+}
+
+.container-scroll .content > div {
+    flex: 1 0 auto;
+}
+
+img {
+    height: 100%;
+    object-fit: cover;
+}
