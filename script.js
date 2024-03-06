@@ -53,6 +53,7 @@ let projects = [
     "52.gsap-basic",
     "53.carousel",
     "54.horizontal-scroll",
+    "55.组合图片旋转",
     "virtual scroller",
     "virtual-scroller-v2",
     "打字机效果(css)",
