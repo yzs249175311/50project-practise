@@ -54,6 +54,7 @@ let projects = [
     "53.carousel",
     "54.horizontal-scroll",
     "55.组合图片旋转",
+    "56.blend-demo",
     "virtual scroller",
     "virtual-scroller-v2",
     "打字机效果(css)",
