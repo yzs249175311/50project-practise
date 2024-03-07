@@ -4,80 +4,88 @@ $box-degree: calc(360 / $box-count);
 // 间隔时间
 
 body {
-    --delay-time: 0.1s;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #eee;
+  --delay-time: 0.1s;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
 }
 
 #main {
-    width: 400px;
-    height: 400px;
-    position: relative;
+  width: 400px;
+  height: 400px;
+  position: relative;
 }
 
 .child {
-    position: absolute;
-    left: 50%;
-    overflow: visible;
+  position: absolute;
+  left: 50%;
+  overflow: visible;
 
-    &>.box {
-        &>div {
-            width: 15px;
-            height: 15px;
-            border-radius: 9999px;
+  & > .box {
+    & > div {
+      width: 15px;
+      height: 15px;
+      border-radius: 9999px;
 
-            &:nth-child(1) {
-                background-color: #fff;
-                margin-bottom: 10px;
-            }
+      &:nth-child(1) {
+        background-color: #fff;
+        margin-bottom: 10px;
+      }
 
-            &:nth-child(2) {
-                background-color: #000;
-            }
-        }
+      &:nth-child(2) {
+        background-color: #000;
+      }
     }
+  }
 }
 
 @for $i from 1 through $box-count {
-    .child:nth-of-type(#{$i}) {
-        transform: rotateZ(#{$box-degree * $i}deg) translateX(-100%);
-        transform-origin: 50% 200px;
-        perspective: 45px;
-        transform-style: preserve-3d;
+  .child:nth-of-type(#{$i}) {
+    transform: rotateZ(#{$box-degree * $i}deg) translateX(-100%);
+    transform-origin: 50% 200px;
+    perspective: 45px;
+    transform-style: preserve-3d;
 
-        &>.box {
-            animation: rotateAnimation #{$animation-time} ease calc(-1 * var(--delay-time) * #{$i}) infinite;
-            perspective: 100px;
-            transform-style: preserve-3d;
+    & > .box {
+      animation: rotateAnimation
+        #{$animation-time}
+        ease
+        calc(-1 * var(--delay-time) * #{$i})
+        infinite;
+      perspective: 100px;
+      transform-style: preserve-3d;
 
-            &>div {
-                transform-origin: 50% 50%;
-                animation: childRotateAnimation #{ $animation-time} ease calc(-1 * var(--delay-time) * #{$i}) infinite;
-            }
-        }
+      & > div {
+        transform-origin: 50% 50%;
+        animation: childRotateAnimation
+          #{$animation-time}
+          ease
+          calc(-1 * var(--delay-time) * #{$i})
+          infinite;
+      }
     }
+  }
 }
 
 @keyframes rotateAnimation {
-    0% {
-        transform: rotateX(0deg);
-    }
+  0% {
+    transform: rotateX(0deg);
+  }
 
-    100% {
-        transform: rotateX(360deg);
-    }
+  100% {
+    transform: rotateX(360deg);
+  }
 }
 
 @keyframes childRotateAnimation {
-    0% {
-        transform: rotateX(0deg);
-    }
+  0% {
+    transform: rotateX(0deg);
+  }
 
-    100% {
-        transform: rotateX(-360deg);
-    }
+  100% {
+    transform: rotateX(-360deg);
+  }
 }

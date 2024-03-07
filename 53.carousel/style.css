@@ -1,103 +1,103 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #eee;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #eee;
 }
 
 .title {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 3rem;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3rem;
 }
 main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    box-shadow: 0 0 50px 2px #000a;
-    width: 50%;
-    overflow: hidden;
-    height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  box-shadow: 0 0 50px 2px #000a;
+  width: 50%;
+  overflow: hidden;
+  height: fit-content;
 }
 
 .carousel-container {
-    display: flex;
-    width: 100%;
-    height: fit-content;
+  display: flex;
+  width: 100%;
+  height: fit-content;
 }
 .carousel-item {
-    flex: 0 0 auto;
-    width: 100%;
-    height: auto;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-item img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: fill;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: fill;
 }
 
 .nav {
-    display: flex;
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    right: 0;
-    width: fit-content;
-    height: fit-content;
-    gap: 5px;
-    margin: auto auto;
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  height: fit-content;
+  gap: 5px;
+  margin: auto auto;
 }
 
 .nav .nav-item {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 99999px;
-    background-color: #ffffff88;
-    z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 99999px;
+  background-color: #ffffff88;
+  z-index: 10;
 }
 
 .nav .nav-item.active {
-    background-color: #ffffffee;
+  background-color: #ffffffee;
 }
 
 .next-btn,
 .prev-btn {
-    position: absolute;
-    width: fit-content;
-    height: fit-content;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding: 2em 1rem;
-    color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-	  transition: all 0.2s ease-out;
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 2em 1rem;
+  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
 }
 
 .next-btn:hover,
 .prev-btn:hover {
-    color: #000;
-    background-color: #ffffff33;
+  color: #000;
+  background-color: #ffffff33;
 }
 
 .next-btn {
-    right: 0;
+  right: 0;
 }
 
 .prev-btn {
-    left: 0;
+  left: 0;
 }

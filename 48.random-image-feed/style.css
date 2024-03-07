@@ -1,21 +1,19 @@
 body {
-	display: flex;
-	width: 100vw;
-	height: 100vh;
-	flex-flow: column nowrap;
-	justify-content: start;
-	align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
 }
 
-h1{
-	text-align: center;
+h1 {
+  text-align: center;
 }
 
 .container {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	width: 1000px;
-	grid-row-gap: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 1000px;
+  grid-row-gap: 20px;
 }
-
-

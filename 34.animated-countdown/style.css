@@ -1,83 +1,82 @@
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0px;
-	padding: 0px;
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-	display: flex;
-	position: absolute;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	transform: scale(1);
-	transition: all ease 0.4s;
+  display: flex;
+  position: absolute;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all ease 0.4s;
 }
 
-main>.number {
-	font-size: 40px;
-	font-weight: 700;
-	color: darkblue;
-	transform-origin: center 120%;
-	animation: counts ease 1s;
+main > .number {
+  font-size: 40px;
+  font-weight: 700;
+  color: darkblue;
+  transform-origin: center 120%;
+  animation: counts ease 1s;
 }
-main>h3 {
-	z-index: 999;
-	background-color: #fff;
-	margin-top: 10px;
-	padding-bottom: 50px;
-}
-
-main.stop{
-	transform: scale(0.2);
-	visibility: ;
+main > h3 {
+  z-index: 999;
+  background-color: #fff;
+  margin-top: 10px;
+  padding-bottom: 50px;
 }
 
+main.stop {
+  transform: scale(0.2);
+  visibility:;
+}
 
 .replay {
-	display: none;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-	animation: showOut ease 1s;
+  display: none;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  animation: showOut ease 1s;
 }
 
 @keyframes showOut {
-	from {
-		transform: scale(0.2);
-	}
-	to {
-		transform: scale(1);
-	}
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @keyframes counts {
-	from {
-		transform: rotateZ(180deg);
-	}
-	20% {
-		transform: rotateZ(-10deg);
-	}
-	30% {
-		transform: rotateZ(10deg);
-	}
-	40% {
-		transform: rotateZ(-5deg);
-	}
-	50% {
-		transform: rotateZ(5deg);
-	}
-	55% {
-		transform: rotateZ(0);
-	}
-	65% {
-		transform: rotateZ(0);
-	}
-	to {
-		transform: rotateZ(-180deg);
-	}
+  from {
+    transform: rotateZ(180deg);
+  }
+  20% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(10deg);
+  }
+  40% {
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  55% {
+    transform: rotateZ(0);
+  }
+  65% {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(-180deg);
+  }
 }

@@ -1,25 +1,25 @@
 body {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 #bg {
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    height: calc(100vh + 30px);
-    width: calc(100vw + 60px);
-    background: url(./assets/image4.jpg) no-repeat center;
-    background-size: cover;
-    filter: blur(px);
-    z-index: -1;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  height: calc(100vh + 30px);
+  width: calc(100vw + 60px);
+  background: url(./assets/image4.jpg) no-repeat center;
+  background-size: cover;
+  filter: blur(px);
+  z-index: -1;
 }
 
-#load-text{
-    font-size: 30px;
-    color:white;
-    user-select:none;
+#load-text {
+  font-size: 30px;
+  color: white;
+  user-select: none;
 }

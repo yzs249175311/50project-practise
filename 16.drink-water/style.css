@@ -1,81 +1,81 @@
-
 :root {
-    --border-color:#304dc1;
-    --full-color:#6fb3f6;
+  --border-color: #304dc1;
+  --full-color: #6fb3f6;
 }
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 main {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    background-color: #3e94e2;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  background-color: #3e94e2;
 }
-.total-water{
-    display: flex;
-    flex-flow: column;
-    overflow: hidden;
-    width: 100px;
-    height: 300px;
-    justify-content:space-between;
-    align-items: stretch;
-    background: #fff;
-    border: 3px solid var(--border-color);
-    border-radius: 0 0 30px 30px ;
+.total-water {
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  width: 100px;
+  height: 300px;
+  justify-content: space-between;
+  align-items: stretch;
+  background: #fff;
+  border: 3px solid var(--border-color);
+  border-radius: 0 0 30px 30px;
 }
 
-.left-box,.full-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    height: 100%;
-    color: var(--border-color);
-    transition: height ease-out 0.4s;
+.left-box,
+.full-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100%;
+  color: var(--border-color);
+  transition: height ease-out 0.4s;
 }
 
 .full-box {
-    background:var(--full-color);
-    /* width: 110px; */
-    height: 0;
-    border-radius: 0 0 28px 28px ;
+  background: var(--full-color);
+  /* width: 110px; */
+  height: 0;
+  border-radius: 0 0 28px 28px;
 }
 
-.full,.left {
-    font-size: 24px;
-    font-weight: 700;
+.full,
+.left {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .select-number {
-    display: flex;
-    width: 200px;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 200px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.select-number>div{
-    display: flex;
-    justify-content: center;
-    align-items:  center;
-    height: 90px;
-    width: 30px;
-    text-align: center;
-    font-size: 12px;
-    word-wrap:break-word ;
-    word-break: break-all;
-    margin: 5px;
-    background: #fff;
-    border: 2px solid var(--border-color);
-    border-radius: 0 0 10px 10px;
-    cursor:pointer;
+.select-number > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 30px;
+  text-align: center;
+  font-size: 12px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 5px;
+  background: #fff;
+  border: 2px solid var(--border-color);
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
 }
-.select-number>div.selected{
-    background-color: #6fb3f6;
-    color:#fff;
+.select-number > div.selected {
+  background-color: #6fb3f6;
+  color: #fff;
 }
-

@@ -1,42 +1,43 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 main {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
-    border: 2px solid;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  border: 2px solid;
 }
 
 canvas {
-    background-color: #e3e3e3;
+  background-color: #e3e3e3;
 }
 
 main .tool {
-    display: flex;
-    flex:1;
-    width: 100%;
-    border-top: 2px solid;
-    align-items: center;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  border-top: 2px solid;
+  align-items: center;
 }
 
-main button,main input{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    outline: none;
-    font-size: 24px;
-    margin: 0 5px;
+main button,
+main input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  font-size: 24px;
+  margin: 0 5px;
 }
 
-#close{
-    margin-left: auto;
+#close {
+  margin-left: auto;
 }

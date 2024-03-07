@@ -1,54 +1,64 @@
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow:column nowrap;
-	margin: 0px;
-	padding: 0px;
-	width: 100vw;
-	height: 100vh;
-	background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
 }
 
 h3 {
-	color: #fff;
+  color: #fff;
 }
 
 .button-group {
-	display: flex;
-	flex-flow:row nowrap;
-	margin-bottom: 10px;
-	.btn-grad {
-		background-image: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%);
-		margin: 10px;
-		padding: 15px 45px;
-		text-align: center;
-		text-transform: uppercase;
-		transition: 0.5s;
-		background-size: 200% auto;
-		color: white;            
-		box-shadow: 0 0 20px #eee;
-		border-radius: 10px;
-		display: block;
-	}
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 10px;
+  .btn-grad {
+    background-image: linear-gradient(
+      to right,
+      #2b5876 0%,
+      #4e4376 51%,
+      #2b5876 100%
+    );
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
 
-	.btn-grad:hover {
-		background-position: right center; /* change the direction of the change here */
-		color: #fff;
-		text-decoration: none;
-	}
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .container {
-	position: relative;
-	background-color: #fff;
-	width: 50%;
-	height:50%; 
-	.ball {
-		position: absolute;
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		background-color: #000;
-	}
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  .ball {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+  }
 }

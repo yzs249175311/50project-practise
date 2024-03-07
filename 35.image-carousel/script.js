@@ -8,30 +8,30 @@ window.onload = controller.continueRun();
 next.addEventListener("click", controller.next);
 prev.addEventListener("click", controller.prev);
 function imgController() {
-    var timer = null;
-    function prev() {
-        currentIndex = currentIndex == 0 ? nums - 1 : currentIndex - 1;
-        update();
-        continueRun();
+  var timer = null;
+  function prev() {
+    currentIndex = currentIndex == 0 ? nums - 1 : currentIndex - 1;
+    update();
+    continueRun();
+  }
+  function next() {
+    currentIndex = (currentIndex + 1) % nums;
+    update();
+    continueRun();
+  }
+  function update() {
+    imgs.style.transform = "translateX(".concat(-currentIndex * 400, "px)");
+  }
+  function continueRun() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
     }
-    function next() {
-        currentIndex = (currentIndex + 1) % nums;
-        update();
-        continueRun();
-    }
-    function update() {
-        imgs.style.transform = "translateX(".concat(-currentIndex * 400, "px)");
-    }
-    function continueRun() {
-        if (timer) {
-            clearTimeout(timer);
-            timer = null;
-        }
-        timer = setTimeout(next, 2000);
-    }
-    return {
-        next: next,
-        prev: prev,
-        continueRun: continueRun
-    };
+    timer = setTimeout(next, 2000);
+  }
+  return {
+    next: next,
+    prev: prev,
+    continueRun: continueRun,
+  };
 }

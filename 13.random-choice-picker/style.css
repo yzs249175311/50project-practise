@@ -1,53 +1,67 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 main {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    margin: 20px 5;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 20px 5;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
 }
-main :nth-child(n){
-    margin: 10px 5px;
+main :nth-child(n) {
+  margin: 10px 5px;
 }
-main>span {
-    font-size: 24px;
+main > span {
+  font-size: 24px;
 }
 .textarea {
-    width: 500px;
-    height: 100px;
-    border: 1px solid;
-    border-radius: 10px;
-    background-color: #fff;
-    padding: 10px 10px;
-    font-size: 18px;
-    outline: none;
-    overflow: auto;
-    place-content: "hahahaha";
+  width: 500px;
+  height: 100px;
+  border: 1px solid;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px 10px;
+  font-size: 18px;
+  outline: none;
+  overflow: auto;
+  place-content: "hahahaha";
 }
 
-#choices{
-    display: flex;
-    flex-flow: wrap;
-    width: 500px;
+#choices {
+  display: flex;
+  flex-flow: wrap;
+  width: 500px;
 }
 
-span.choice{
-    height: 20px;
-    border-radius: 20px 20px;
-    margin: 5px 5px;
-    padding: 5px 10px;
-    background: coral;
-    transition: transform ease 500ms;
-    color: #fff;
+span.choice {
+  height: 20px;
+  border-radius: 20px 20px;
+  margin: 5px 5px;
+  padding: 5px 10px;
+  background: coral;
+  transition: transform ease 500ms;
+  color: #fff;
 }
 
-span.choice.win{
-    background: blueviolet;
-    transform: scale(1.3);
+span.choice.win {
+  background: blueviolet;
+  transform: scale(1.3);
 }

@@ -1,54 +1,54 @@
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column nowrap;
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100vw;
+  height: 100vh;
 }
 h1 {
-	font-size: 196px;
-	color: #dbc7ed;
-	margin: 130px 0;
+  font-size: 196px;
+  color: #dbc7ed;
+  margin: 130px 0;
 }
 
 .container {
-	border: 0;
-	box-shadow:rgba(0,0,0,0.1) 0 0 10px 1px;
-	margin-bottom: 50px;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px 1px;
+  margin-bottom: 50px;
 }
 
-input[name=todo-input],
-.todo{
-	display: flex;
-	width: 400px;
-	height: 80px;
-	border: 0;
-	outline: none;
-	align-items: center;
-	padding-left: 2rem;
-	font-size: 2rem;
-	border-radius: 1px;
+input[name="todo-input"],
+.todo {
+  display: flex;
+  width: 400px;
+  height: 80px;
+  border: 0;
+  outline: none;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 2rem;
+  border-radius: 1px;
 }
 
-input[name=todo-input]:focus{
-	outline:#dbc7ed solid 2px;
+input[name="todo-input"]:focus {
+  outline: #dbc7ed solid 2px;
 }
 
-input[name=todo-input]::placeholder{
-	color: rgba(0,0,0, 0.2);
+input[name="todo-input"]::placeholder {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .todo {
-	border-top: 1px solid rgba(0,0,0,0.1) ;
-	cursor:pointer;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.todo.finish{
-	text-decoration: line-through;
-	color: grey
+.todo.finish {
+  text-decoration: line-through;
+  color: grey;
 }
 
 span {
-	color: grey;
+  color: grey;
 }

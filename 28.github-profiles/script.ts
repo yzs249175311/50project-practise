@@ -5,7 +5,7 @@ let searchUser: HTMLInputElement = document.querySelector("#search")!;
 searchUser.addEventListener("keyup", (e: KeyboardEvent) => {
   if ("Enter" === e.code) {
     getUser(e.currentTarget?.value);
-    searchUser.value=""
+    searchUser.value = "";
   }
 });
 
@@ -17,9 +17,9 @@ function getUser(username) {
         throw new Error("not found");
       }
       createUserCard(data);
-      setTimeout(()=>{
+      setTimeout(() => {
         getRepos(username);
-      },1000)
+      }, 1000);
     })
     .catch((errpr) => createErrorCard());
 }

@@ -1,72 +1,72 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .button {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 50vh;
-    border: 0;
-    opacity: 0.5;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 50vh;
+  border: 0;
+  opacity: 0.5;
 }
 
 .div {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 36px;
-    color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #fff;
 }
 
-.animation{
-    transition: all 0.4s ease-out;
+.animation {
+  transition: all 0.4s ease-out;
 }
 
 aside {
-    position: relative;
-    flex: 3;
-    background: #22f2f2;
-    .animation;
-    div {
-        .div;
-    }
+  position: relative;
+  flex: 3;
+  background: #22f2f2;
+  .animation;
+  div {
+    .div;
+  }
 }
 
 main {
-    position: relative;
-    flex-flow: column nowrap;
-    flex: 7;
-    background: violet;
-    .animation;
-    div {
-        .div;
-    }
+  position: relative;
+  flex-flow: column nowrap;
+  flex: 7;
+  background: violet;
+  .animation;
+  div {
+    .div;
+  }
 }
 
 .down {
-    .button;
-    right: 70%;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+  .button;
+  right: 70%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .down:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .up {
-    .button;
-    left: 30%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  .button;
+  left: 30%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .up:hover {
-    opacity: 1;
+  opacity: 1;
 }

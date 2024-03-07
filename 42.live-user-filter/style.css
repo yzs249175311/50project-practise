@@ -1,89 +1,87 @@
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-	height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-	display: flex;
-	flex-flow: column nowrap;
-	width: 300px;
-	height: 600px;
-	border:1px solid;
-	border-radius: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+  height: 600px;
+  border: 1px solid;
+  border-radius: 5px;
 }
 
 main .title {
-	display: flex;
-	justify-content: center;
-	flex-flow: column nowrap;
-	background-color: royalblue;
-	padding: 20px;
-	color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  background-color: royalblue;
+  padding: 20px;
+  color: #fff;
 }
 
-main .title h3{
-	margin: 0;
+main .title h3 {
+  margin: 0;
 }
 
-main .title p{
-	font-size: 12px;;
+main .title p {
+  font-size: 12px;
 }
 
-main .title #filter{
-	border-radius: 20px;;
-	height: 30px;
-	font-size: 20px;
-	background-color: #323c97;
-	outline: none;
-	padding-left: 10px;
-	border: 0;
-
+main .title #filter {
+  border-radius: 20px;
+  height: 30px;
+  font-size: 20px;
+  background-color: #323c97;
+  outline: none;
+  padding-left: 10px;
+  border: 0;
 }
 
 #result {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: stretch;
-	flex:1;
-	overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  flex: 1;
+  overflow: auto;
 }
 
-#result>div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 10px;
+#result > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-#result>div {
-	border-bottom: 1px solid #e3e3e3;
+#result > div {
+  border-bottom: 1px solid #e3e3e3;
 }
-#result>div.hide {
-	display: none;
-}
-
-#result>div:last-child {
-	border-bottom: 0 ;
+#result > div.hide {
+  display: none;
 }
 
-#result>div>img {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	margin: 0 10px;
+#result > div:last-child {
+  border-bottom: 0;
 }
 
-#result>div>div{
-	flex:1;
-	display: flex;
-	flex-flow: column nowrap;
+#result > div > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
 }
 
-#result>div>div>h4,
-#result>div>div>p
-{
-	margin: 8px;
+#result > div > div {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#result > div > div > h4,
+#result > div > div > p {
+  margin: 8px;
 }

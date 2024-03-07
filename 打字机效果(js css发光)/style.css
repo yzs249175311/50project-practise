@@ -1,46 +1,46 @@
 :root {
-    --bg-color: #09242f;
+  --bg-color: #09242f;
 }
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    background-color: var(--bg-color);
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 100px;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: var(--bg-color);
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 100px;
+  overflow: hidden;
 }
 #content {
-    position: relative;
-    display: flex;
-    left: 3em;
-    padding: 0 2em;
-    height: 1em;
-    line-height: 1em;
-    /* 重要 不然文本最后的空格会不显示*/
-    white-space: pre;
-    color: #ffff;
-    text-shadow:
-        0 0 10px yellow,
-        0 0 30px yellow,
-        0 0 60px yellow,
-        0 0 90px yellow,
-        0 0 120px yellow;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
+  position: relative;
+  display: flex;
+  left: 3em;
+  padding: 0 2em;
+  height: 1em;
+  line-height: 1em;
+  /* 重要 不然文本最后的空格会不显示*/
+  white-space: pre;
+  color: #ffff;
+  text-shadow:
+    0 0 10px yellow,
+    0 0 30px yellow,
+    0 0 60px yellow,
+    0 0 90px yellow,
+    0 0 120px yellow;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0009);
 }
 
 #content::after {
-    content: "";
-    height: 100%;
-    background-color: #fff;
-    width: 0.2em;
-    z-index: 999;
-    animation: flashing 0.3s ease infinite;
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  width: 0.2em;
+  z-index: 999;
+  animation: flashing 0.3s ease infinite;
 }
 
 @keyframes flashing {
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }

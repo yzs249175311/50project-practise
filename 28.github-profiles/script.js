@@ -6,7 +6,7 @@ searchUser.addEventListener("keyup", function (e) {
   var _a;
   if ("Enter" === e.code) {
     getUser(
-      (_a = e.currentTarget) === null || _a === void 0 ? void 0 : _a.value
+      (_a = e.currentTarget) === null || _a === void 0 ? void 0 : _a.value,
     );
     searchUser.value = "";
   }
@@ -43,24 +43,24 @@ function createUserCard(data) {
     '\n        <div class="card">\n            <div id="avatar">\n                <img src="'
       .concat(
         data.avatar_url,
-        '" alt="\u5934\u50CF">\n            </div>\n            <div id="info">\n                <h2 id="name">'
+        '" alt="\u5934\u50CF">\n            </div>\n            <div id="info">\n                <h2 id="name">',
       )
       .concat(data.name, '</h2>\n                <span id="bio">')
       .concat(
         data.bio,
-        "</span>\n                <ul>\n                    <li>"
+        "</span>\n                <ul>\n                    <li>",
       )
       .concat(
         data.followers,
-        "<strong>Followers</strong></li>\n                    <li>"
+        "<strong>Followers</strong></li>\n                    <li>",
       )
       .concat(
         data.following,
-        "<strong>Following</strong></li>\n                    <li>"
+        "<strong>Following</strong></li>\n                    <li>",
       )
       .concat(
         data.public_repos,
-        '<strong>Repos</strong></li>\n                </ul>\n                <p id="repos"></p>\n            </div>\n        </div>\n    '
+        '<strong>Repos</strong></li>\n                </ul>\n                <p id="repos"></p>\n            </div>\n        </div>\n    ',
       );
   profiles.innerHTML = cardDiv;
 }

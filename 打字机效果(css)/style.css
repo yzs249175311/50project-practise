@@ -1,49 +1,49 @@
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    background-color: #e3e3e3;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #e3e3e3;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
 }
 #content {
-    position: relative;
-    font-family: monospace;
-    display: flex;
-    height: 1em;
-    line-height: 1em;
-    white-space: nowrap;
+  position: relative;
+  font-family: monospace;
+  display: flex;
+  height: 1em;
+  line-height: 1em;
+  white-space: nowrap;
 }
 
 #content::before,
 #content::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: #e3e3e3;
-    position: absolute;
-    inset: 0;
-    z-index: 998;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #e3e3e3;
+  position: absolute;
+  inset: 0;
+  z-index: 998;
 }
 
 #content::before {
-    width: 0.1em;
-    background-color: black;
-    z-index: 999;
+  width: 0.1em;
+  background-color: black;
+  z-index: 999;
 }
 
 @keyframes typewriter {
-    from {
-        left: 0;
-    }
-    to {
-        left: 100%;
-    }
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
 }
 
 @keyframes flashing {
-    to {
-        opacity: 0;
-    }
+  to {
+    opacity: 0;
+  }
 }

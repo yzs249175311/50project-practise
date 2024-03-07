@@ -1,23 +1,23 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-    width: 800px;
-    overflow-y: auto;
-    border: 1px solid;
+  width: 800px;
+  overflow-y: auto;
+  border: 1px solid;
 }
 
-.item{
-    text-align: center;
+.item {
+  text-align: center;
 }
 
 .item:nth-child(even) {
-    background-color: #e3e3e3;
+  background-color: #e3e3e3;
 }

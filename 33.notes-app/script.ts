@@ -1,8 +1,8 @@
-let button = document.querySelector(".add")
-let main = document.querySelector("main")
+let button = document.querySelector(".add");
+let main = document.querySelector("main");
 
 button.addEventListener("click", function (e) {
-	main.innerHTML += `
+  main.innerHTML += `
 <div class="textarea">
 	<div class="title">
 <i class="fa fa-pencil-square-o" aria-hidden="true" onclick="edit(event)"></i>
@@ -12,27 +12,27 @@ button.addEventListener("click", function (e) {
 
 	</div>
 </div>
-`
-})
+`;
+});
 
-function edit(e:PointerEvent){
-	let content:HTMLDivElement = e.currentTarget.parentNode.parentNode.querySelector(".content")!
-	if(content.classList.contains("preview")){
-		content.classList.remove("preview")
-		content.contentEditable = true
-		content.style.width = content.getAttribute("oldWidth")
-		content.style.height = content.getAttribute("oldHeight")
-	}else{
-		content.classList.add("preview")
-		content.contentEditable = false 
-		content.setAttribute("oldWidth",content.style.width)
-		content.setAttribute("oldHeight",content.style.height)
-		content.style.width ="20rem"
-		content.style.height ="20rem"
-	}
-	
+function edit(e: PointerEvent) {
+  let content: HTMLDivElement =
+    e.currentTarget.parentNode.parentNode.querySelector(".content")!;
+  if (content.classList.contains("preview")) {
+    content.classList.remove("preview");
+    content.contentEditable = true;
+    content.style.width = content.getAttribute("oldWidth");
+    content.style.height = content.getAttribute("oldHeight");
+  } else {
+    content.classList.add("preview");
+    content.contentEditable = false;
+    content.setAttribute("oldWidth", content.style.width);
+    content.setAttribute("oldHeight", content.style.height);
+    content.style.width = "20rem";
+    content.style.height = "20rem";
+  }
 }
 
-function trash(e){
-	e.currentTarget.parentNode.parentNode.remove()
+function trash(e) {
+  e.currentTarget.parentNode.parentNode.remove();
 }
